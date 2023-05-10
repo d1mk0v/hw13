@@ -14,20 +14,26 @@
 //    Так как вы изучили геттеры и сеттеры, оставлять поля открытыми, без модификатора доступа private, недопустимо.
 
 
+//Реализуйте методы toString, equals и hashCode в классах Author и Book, которые вы создали на прошлом уроке.
+// Обратите внимание, что toString книги не должен дублировать код из toString автора, а должен делегировать (вызывать) его версию метода.
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
         Author author1 = new Author("Лев", "Толстой");
         Author author2 = new Author("Михаил", "Булгаков");
-//        System.out.println("author1 = " + author1.getFirstName() + " " + author1.getLastName());
-//        System.out.println("author2 = " + author2.getFirstName() + " " + author2.getLastName());
+        System.out.println("author1 - " + author1);
+        System.out.println("author2 - " + author2);
         Book book1 = new Book("Война и Мир", author1, 1869);
-        Book book2 = new Book("Мастер и Маргаита", author2, 1940);
+        Book book2 = new Book("Мастер и Маргарита", author2, 1940);
 
-        System.out.println("book1 - " + book1.getTitle() + ", " + author1.getFirstName() + " " + author1.getLastName() + ", " + book1.getYear());
-        System.out.println("book2 - " + book2.getTitle() + ", " + author2.getFirstName() + " " + author2.getLastName() + ", " + book2.getYear());
+//        System.out.println("book1 - " + book1.getTitle() + ", " + author1.getFirstName() + " " + author1.getLastName() + ", " + book1.getYear());
+//        System.out.println("book2 - " + book2.getTitle() + ", " + author2.getFirstName() + " " + author2.getLastName() + ", " + book2.getYear());
 
-        book1.setYear(1870);
-        System.out.println("Год публикации книги " + book1.getTitle() + " изменен на " + book1.getYear());
+        System.out.println("book1 - " + book1);
+        System.out.println("book2 - " + book2);
+
+//        book1.setYear(1870);
+//        System.out.println("Год публикации книги " + book1.getTitle() + " изменен на " + book1.getYear());
     }
 }
