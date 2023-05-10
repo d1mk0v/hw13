@@ -24,6 +24,7 @@ public class Main {
         Author author2 = new Author("Михаил", "Булгаков");
         System.out.println("author1 - " + author1);
         System.out.println("author2 - " + author2);
+
         Book book1 = new Book("Война и Мир", author1, 1869);
         Book book2 = new Book("Мастер и Маргарита", author2, 1940);
 
